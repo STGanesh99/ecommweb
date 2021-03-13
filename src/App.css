@@ -1,38 +1,222 @@
-.App {
+.table{
+  display:inline-block;
+  margin-left:70px;
+  margin-right:70px;
+  margin-top:40px;
+}
+
+table, th, td {
+  border: 3px solid peru;
+  font-family: 'Pacifico', cursive;
+}
+
+td{
+  padding:20px;
+  padding-right:60px;
+}
+
+.category{
+  text-align: center;
+  margin-top:20px;
+  font-family: 'Pacifico', cursive;
+}
+
+.container{
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  border-collapse: collapse;
+  border-radius: 3em;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.quantity{
+  width: 25px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addbtn,.subbtn{
+  width:30px;
+  height:30px;
+  border-radius: 40%;
+  margin:10px
 }
 
-.App-link {
-  color: #61dafb;
+.checkoutbtn{
+  text-align: center;
+  width:150px;
+  height:60px;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 20%;
+  background-color:lawngreen;
+  font-family: 'RocknRoll One', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkout{
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.product{
+  display:inline-block;
+  margin:20px 40px;
+  text-align: center;
+}
+
+.products{
+  text-align: center;
+}
+
+.confirm{
+  text-align: center;
+  margin-top:50px;
+  margin-left:47%;
+  height:40px;
+  background-color:chartreuse;
+  border-radius: 20px;
+}
+
+.total{
+  text-align: center;
+  margin :30px;
+  font-weight:bolder;
+  font-size: x-large;
+}
+
+.place{
+  text-align: center;
+  margin-top:50px;
+  margin-left:47%;
+  width:100px;
+  height:50px;
+  color:white;
+  background-color:red;
+  border-radius:30%;
+  font-family: 'RocknRoll One', sans-serif;
+  font-weight:bold
+}
+
+.Backdrop{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index: 100;
+  left:0;
+  top:0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  z-index:500;
+  width:30%;
+  text-align: center;
+  margin-left: 35%;
+  letter-spacing: 0.7px;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  padding: 2px 1;
+  text-align: center;
+  position: relative;
+  z-index:500
+}
+.background{
+  background-image: url("./wood.jpg");
+  background-repeat: no-repeat;
+  color:bisque;
+  background-size: cover;
+}
+.addbtn{
+  background-color:lightskyblue
+}
+.subbtn{
+  background-color:lightskyblue
+}
+.head{
+  background-color: black;
+  padding-top:10px;
+  padding-bottom: 1px;
+  margin-left: 250px;
+  margin-right:250px;
+  border-radius: 0 0 30% 30%;
+  background-image:url("./stars.jpg");
+  background-size:cover;
+  border:10px solid black
+}
+.head:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.Heading{
+  color:saddlebrown;
+  font-size:70px;
+  font-family: 'RocknRoll One', sans-serif;
+  text-align: center;
+}
+.tables{
+  margin-top: 80px;
+}
+.buyone{
+  color:chartreuse;
+  font-size:large;
+  font-weight: bold;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.checkoutbackground{
+  background-image: url("./wood.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Pacifico', cursive;
+  color:bisque;
+  padding-bottom: 260px;
+  background-size: cover;
+  margin-top: 0;
+}
+.dummy{
+  margin:0
+}
+.changeorder{
+  text-align: center;
+  width:150px;
+  height:60px;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 20%;
+  background-color:lawngreen;
+  font-family: 'RocknRoll One', sans-serif;
+  margin-left:45%;
+}
+.anotherorder{
+  text-align: center;
+  width:150px;
+  height:60px;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 20%;
+  background-color:lawngreen;
+  font-family: 'RocknRoll One', sans-serif;
+  margin-left:45%;
+}
+.checkoutheading{
+  color:saddlebrown;
+  font-size:50px;
+  font-family: 'RocknRoll One', sans-serif;
+  text-align: center;
+}
+.headcheck{
+  border-radius: 100%;
+  background-color: black;
+  margin:0 300px;
+  padding: 20px 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
